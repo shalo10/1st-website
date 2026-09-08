@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dining Locations | Gou Kreol Hub</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/locations.css">
+  <!-- Font Awesome for Footer Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Gou Kreol</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Cuisine Guide</a></li>
+        <li><a href="locations.html" class="nav-link active">Restaurants</a></li>
+        <li><a href="events.html" class="nav-link">Events</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1 style="color: white;">Creole Dining Directory</h1>
+      <p>Explore authentic takeaways, beachside grills, and fine dining across the islands.</p>
+    </div>
+  </section>
+
+  <!-- MAIN DIRECTORY CONTENT -->
+  <main class="container">
+    
+    <div class="controls-container">
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">All Islands</button>
+        <button class="filter-btn" data-filter="mahe">Mahé</button>
+        <button class="filter-btn" data-filter="praslin">Praslin</button>
+        <button class="filter-btn" data-filter="ladigue">La Digue</button>
+      </div>
+
+      <input type="text" id="location-search" class="search-box" placeholder="Search venue or location...">
+    </div>
+
+    <!-- ISLAND SECTIONS DIRECTORY -->
+    <div id="location-sections">
+
+      <!-- SECTION 1: MAHÉ (7 Venues) -->
+      <section class="island-section" data-island="mahe">
+        <h2 class="section-title">Mahé Island</h2>
+        <div class="card-grid">
+
+          <article class="card restaurant-card" data-island="mahe">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Marie Antoinette">
+            <div class="card-body">
+              <span class="tag">Mahé • Heritage</span>
+              <h3>Marie Antoinette</h3>
+              <p>Traditional family-style Creole buffets served in a historic colonial mansion.</p>
+              <div class="location-details">
+                <span>🕒 12:00 PM - 9:30 PM</span>
+                <span class="price-tag">$$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Marie Antoinette" data-address="Serret Road, Victoria" data-island="Mahé">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="mahe">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="La Boathouse">
+            <div class="card-body">
+              <span class="tag">Mahé • Buffet & Grill</span>
+              <h3>La Boathouse Restaurant</h3>
+              <p>Famous beachfront Creole buffet with fresh grilled fish and traditional salads.</p>
+              <div class="location-details">
+                <span>🕒 11:30 AM - 10:00 PM</span>
+                <span class="price-tag">$$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="La Boathouse" data-address="Beau Vallon Beach" data-island="Mahé">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="mahe">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Chez Plage">
+            <div class="card-body">
+              <span class="tag">Mahé • Casual Seafood</span>
+              <h3>Chez Plage Shack</h3>
+              <p>Beachside takeaway serving grilled octopus, bat curry, and tropical juices.</p>
+              <div class="location-details">
+                <span>🕒 10:00 AM - 7:00 PM</span>
+                <span class="price-tag">$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Chez Plage Shack" data-address="Anse Royale" data-island="Mahé">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="mahe">
+            <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80" alt="Del Place">
+            <div class="card-body">
+              <span class="tag">Mahé • Oceanfront</span>
+              <h3>Del Place Restaurant</h3>
+              <p>Lagoon-side Creole restaurant renowned for red snapper and prawn curry.</p>
+              <div class="location-details">
+                <span>🕒 12:00 PM - 9:30 PM</span>
+                <span class="price-tag">$$$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Del Place Restaurant" data-address="Port Glaud" data-island="Mahé">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="mahe">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&q=80" alt="Surfers Beach Restaurant">
+            <div class="card-body">
+              <span class="tag">Mahé • Beachside Bar</span>
+              <h3>Surfers Beach Restaurant</h3>
+              <p>Relaxed dining right on the sand featuring Creole platters and cocktails.</p>
+              <div class="location-details">
+                <span>🕒 11:00 AM - 9:00 PM</span>
+                <span class="price-tag">$$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Surfers Beach Restaurant" data-address="Anse Parnel" data-island="Mahé">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="mahe">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Le Jardin du Roi">
+            <div class="card-body">
+              <span class="tag">Mahé • Spice Garden</span>
+              <h3>Le Jardin du Roi Restaurant</h3>
+              <p>Hillside restaurant serving home-style meals infused with fresh garden spices.</p>
+              <div class="location-details">
+                <span>🕒 10:00 AM - 5:00 PM</span>
+                <span class="price-tag">$$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Le Jardin du Roi" data-address="Anse Royale Hill" data-island="Mahé">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="mahe">
+            <img src="https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?auto=format&fit=crop&w=600&q=80" alt="VHF Takeaway">
+            <div class="card-body">
+              <span class="tag">Mahé • Local Takeaway</span>
+              <h3>Victoria Harbor Breeze</h3>
+              <p>Quick local food stall offering daily boxed curries and fried chili fish balls.</p>
+              <div class="location-details">
+                <span>🕒 8:30 AM - 4:00 PM</span>
+                <span class="price-tag">$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Victoria Harbor Breeze" data-address="Market Street, Victoria" data-island="Mahé">View Location</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SECTION 2: PRASLIN (6 Venues) -->
+      <section class="island-section" data-island="praslin">
+        <h2 class="section-title">Praslin Island</h2>
+        <div class="card-grid">
+
+          <article class="card restaurant-card" data-island="praslin">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Les Rochers">
+            <div class="card-body">
+              <span class="tag">Praslin • Fine Dining</span>
+              <h3>Les Rochers</h3>
+              <p>Oceanfront dining featuring refined Creole seafood specialties alongside sunset views.</p>
+              <div class="location-details">
+                <span>🕒 6:30 PM - 10:00 PM</span>
+                <span class="price-tag">$$$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Les Rochers" data-address="Anse St. Sauveur" data-island="Praslin">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="praslin">
+            <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=600&q=80" alt="Café des Arts">
+            <div class="card-body">
+              <span class="tag">Praslin • Seafood & Art</span>
+              <h3>Café des Arts</h3>
+              <p>Upscale beachfront seafood dining surrounded by fine local art displays.</p>
+              <div class="location-details">
+                <span>🕒 12:00 PM - 9:30 PM</span>
+                <span class="price-tag">$$$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Café des Arts" data-address="Anse Volbert" data-island="Praslin">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="praslin">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Bonbon Plume">
+            <div class="card-body">
+              <span class="tag">Praslin • Beach Bistro</span>
+              <h3>Bonbon Plume</h3>
+              <p>Rustic dining right on Anse Lazio serving whole coconut curries and lobster.</p>
+              <div class="location-details">
+                <span>🕒 11:00 AM - 4:30 PM</span>
+                <span class="price-tag">$$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Bonbon Plume" data-address="Anse Lazio" data-island="Praslin">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="praslin">
+            <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?auto=format&fit=crop&w=600&q=80" alt="The Laurier">
+            <div class="card-body">
+              <span class="tag">Praslin • Creole Buffet</span>
+              <h3>The Laurier Grill & Buffet</h3>
+              <p>Famous charcoal grill buffet featuring wild snapper, pork, and cassava salads.</p>
+              <div class="location-details">
+                <span>🕒 7:00 PM - 10:00 PM</span>
+                <span class="price-tag">$$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="The Laurier Grill" data-address="Cote d'Or" data-island="Praslin">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="praslin">
+            <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=600&q=80" alt="Coco Rouge">
+            <div class="card-body">
+              <span class="tag">Praslin • Casual Takeaway</span>
+              <h3>Coco Rouge Takeaway</h3>
+              <p>Popular local hub for quick Creole curries, octopus salads, and fresh juice.</p>
+              <div class="location-details">
+                <span>🕒 10:00 AM - 8:00 PM</span>
+                <span class="price-tag">$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Coco Rouge Takeaway" data-address="Baie Sainte Anne" data-island="Praslin">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="praslin">
+            <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=600&q=80" alt="Breeze Garden">
+            <div class="card-body">
+              <span class="tag">Praslin • Garden Cafe</span>
+              <h3>Breeze Garden Praslin</h3>
+              <p>Shaded garden courtyard serving fresh clam soups, coconut cakes, and coffee.</p>
+              <div class="location-details">
+                <span>🕒 9:00 AM - 6:00 PM</span>
+                <span class="price-tag">$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Breeze Garden Praslin" data-address="Grand Anse" data-island="Praslin">View Location</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SECTION 3: LA DIGUE (6 Venues) -->
+      <section class="island-section" data-island="ladigue">
+        <h2 class="section-title">La Digue Island</h2>
+        <div class="card-grid">
+
+          <article class="card restaurant-card" data-island="ladigue">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Chez Jules">
+            <div class="card-body">
+              <span class="tag">La Digue • Beachside</span>
+              <h3>Chez Jules</h3>
+              <p>Laid-back beachfront spot serving fresh octopus salad, fresh juices, and grilled fish.</p>
+              <div class="location-details">
+                <span>🕒 9:00 AM - 6:00 PM</span>
+                <span class="price-tag">$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Chez Jules" data-address="Anse Banane" data-island="La Digue">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="ladigue">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Fish Trap">
+            <div class="card-body">
+              <span class="tag">La Digue • Waterfront</span>
+              <h3>Fish Trap Restaurant</h3>
+              <p>Harborside dining with sunset views, artisanal cocktails, and Creole platters.</p>
+              <div class="location-details">
+                <span>🕒 8:00 AM - 10:00 PM</span>
+                <span class="price-tag">$$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Fish Trap Restaurant" data-address="La Passe Harbor" data-island="La Digue">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="ladigue">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Le Repaire">
+            <div class="card-body">
+              <span class="tag">La Digue • Italian & Creole</span>
+              <h3>Le Repaire Boutique Restaurant</h3>
+              <p>Tranquil seaside eatery serving wood-fired pizzas and fresh local red snapper.</p>
+              <div class="location-details">
+                <span>🕒 12:00 PM - 9:00 PM</span>
+                <span class="price-tag">$$$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Le Repaire" data-address="Anse Réunion" data-island="La Digue">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="ladigue">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80" alt="Mi Mum's Takeaway">
+            <div class="card-body">
+              <span class="tag">La Digue • Local Favorite</span>
+              <h3>Mi Mum's Takeaway</h3>
+              <p>Highly rated takeaway serving authentic fish curry boxes and banana fritters.</p>
+              <div class="location-details">
+                <span>🕒 11:00 AM - 5:00 PM</span>
+                <span class="price-tag">$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Mi Mum's Takeaway" data-address="La Passe Center" data-island="La Digue">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="ladigue">
+            <img src="https://images.unsplash.com/photo-1579631542720-3a87824fff86?auto=format&fit=crop&w=600&q=80" alt="Old Pier Cafe">
+            <div class="card-body">
+              <span class="tag">La Digue • Rustic Pier</span>
+              <h3>Old Pier Café</h3>
+              <p>Open-air wooden pier café serving shark chutney, chips, and tropical fruit smoothies.</p>
+              <div class="location-details">
+                <span>🕒 9:00 AM - 6:00 PM</span>
+                <span class="price-tag">$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Old Pier Café" data-address="Anse Sévère" data-island="La Digue">View Location</button>
+            </div>
+          </article>
+
+          <article class="card restaurant-card" data-island="ladigue">
+            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=600&q=80" alt="Veuve Reserve Cafe">
+            <div class="card-body">
+              <span class="tag">La Digue • Eco Cafe</span>
+              <h3>Veuve Reserve Forest Shack</h3>
+              <p>Eco-friendly forest garden stop serving organic coconut juice and cassava sweets.</p>
+              <div class="location-details">
+                <span>🕒 9:00 AM - 4:00 PM</span>
+                <span class="price-tag">$</span>
+              </div>
+              <button class="btn-outline view-map-btn" data-name="Veuve Reserve Shack" data-address="Veuve Reserve Trail" data-island="La Digue">View Location</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- LOCATION MODAL -->
+  <div class="modal-overlay" id="location-modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2 id="modal-title">Venue Name</h2>
+      <p id="modal-address">Address details...</p>
+      
+      <div class="map-box">
+        📍 Interactive Map Pin Loaded<br>
+        <small>Seychelles GPS Coordinates Active</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPANDED FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col">
+        <h3>Gou Kreol Hub</h3>
+        <p>Celebrating Seychellois Culture through authentic local flavors and traditions.</p>
+        <div class="social-icons">
+          <a href="https://wa.me/2480000000" target="_blank" class="social-btn whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com" target="_blank" class="social-btn instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" class="social-btn facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Cuisine Guide</a></li>
+          <li><a href="locations.html">Restaurants</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="contact-info">
+          <li><i class="fas fa-location-dot"></i> Victoria, Mahé, Seychelles</li>
+          <li><i class="fas fa-phone"></i> +248 123 4567</li>
+          <li><i class="fas fa-envelope"></i> info@goukreolhub.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gou Kreol Hub. Celebrating Seychellois Culture.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/locations.js"></script>
+</body>
+</html>

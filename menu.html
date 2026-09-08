@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creole Cuisine Guide | Gou Kreol Hub</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <!-- Font Awesome for Footer Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Gou Kreol</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link active">Cuisine Guide</a></li>
+        <li><a href="locations.html" class="nav-link">Restaurants</a></li>
+        <li><a href="events.html" class="nav-link">Events</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1 style="color: white;">Creole Cuisine Guide</h1>
+      <p>Discover traditional Seychellois recipes, spice profiles, and iconic island flavors.</p>
+    </div>
+  </section>
+
+  <!-- MAIN MENU CONTENT -->
+  <main class="container">
+    
+    <div class="controls-container">
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">All Dishes</button>
+        <button class="filter-btn" data-filter="curry">Curries</button>
+        <button class="filter-btn" data-filter="seafood">Seafood & Grills</button>
+        <button class="filter-btn" data-filter="dessert">Desserts</button>
+        <button class="filter-btn" data-filter="appetizer">Appetizers & Snacks</button>
+      </div>
+
+      <input type="text" id="dish-search" class="search-box" placeholder="Search dishes or ingredients...">
+    </div>
+
+    <!-- DISH SECTIONS -->
+    <div id="menu-sections">
+
+      <!-- SECTION 1: CURRIES (10+ Dishes) -->
+      <section class="category-section" data-category="curry">
+        <h2 class="section-title">Authentic Curries</h2>
+        <div class="card-grid">
+          
+          <article class="card dish-card" data-category="curry">
+            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" alt="Kari Zourit">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Curry</span><span class="spice-rating">🌶️ Medium</span></div>
+              <h3>Kari Zourit (Octopus Curry)</h3>
+              <p>Tender octopus slow-cooked in rich coconut milk, eggplant, and fragrant Creole spices.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Octopus, Coconut Milk, Turmeric, Eggplant.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="curry">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80" alt="Kari Koko Poulet">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Curry</span><span class="spice-rating">🌶️ Mild</span></div>
+              <h3>Kari Koko Poulet (Chicken Coconut Curry)</h3>
+              <p>Succulent chicken thighs simmered in ground masala, coconut cream, and cinnamon leaves.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Chicken, Coconut Milk, Cinnamon Leaves, Masala.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="curry">
+            <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=80" alt="Kari Poisson Sante">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Curry</span><span class="spice-rating">🌶️ Medium</span></div>
+              <h3>Kari Poisson Sante</h3>
+              <p>Saffron-infused yellow fish curry made with wild local herbs and tender potato cubes.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> White Fish, Turmeric, Saffron, Potato, Ginger.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="curry">
+            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&q=80" alt="Kari Sorb">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Curry</span><span class="spice-rating">🌶️ Spicy</span></div>
+              <h3>Kari Sorb (Crab Curry)</h3>
+              <p>Fresh land crab prepared in a hot, savory spiced curry sauce with crushed chilies.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Land Crab, Dried Chili, Garlic, Curry Leaves.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="curry">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80" alt="Kari Kabri">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Curry</span><span class="spice-rating">🌶️ Spicy</span></div>
+              <h3>Kari Kabri (Goat Curry)</h3>
+              <p>Traditional slow-roasted goat stewed with roasted island spices and sweet potatoes.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Goat Meat, Roasted Masala, Sweet Potato, Thyme.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="curry">
+            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=600&q=80" alt="Kari Crevette">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Curry</span><span class="spice-rating">🌶️ Medium</span></div>
+              <h3>Kari Crevette Koko</h3>
+              <p>Wild ocean prawns cooked in aromatic coconut milk gravy with lemongrass and kaffir lime.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Prawns, Coconut Milk, Lemongrass, Kaffir Lime.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="curry">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=80" alt="Kari Poisson Sale">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Curry</span><span class="spice-rating">🌶️ Medium</span></div>
+              <h3>Kari Poisson Salé (Saltfish Curry)</h3>
+              <p>Salt-cured fish desalted and cooked down with green papaya and island curry paste.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Saltfish, Green Papaya, Tomatoes, Onions.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="curry">
+            <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80" alt="Kari Koko Bef">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Curry</span><span class="spice-rating">🌶️ Mild</span></div>
+              <h3>Kari Koko Bèf (Beef Curry)</h3>
+              <p>Rich coconut beef curry cooked low and slow with fresh garden herbs and pumpkins.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Beef Chuck, Coconut Milk, Pumpkin, Garlic.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="curry">
+            <img src="https://images.unsplash.com/photo-1631292784640-2b24be784d5d?auto=format&fit=crop&w=600&q=80" alt="Kari Zak">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Curry</span><span class="spice-rating">🌱 Vegan</span></div>
+              <h3>Kari Zak (Jackfruit Curry)</h3>
+              <p>Young raw jackfruit cooked in a savory Creole spice blend. A classic vegan favorite.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Green Jackfruit, Coconut Milk, Cumin, Mustard Seed.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="curry">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80" alt="Kari Mang">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Curry</span><span class="spice-rating">🌶️ Spicy</span></div>
+              <h3>Kari Mang (Green Mango Curry)</h3>
+              <p>Tart green mangoes stewed with mustard seeds, chilies, and island coconut oil.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Unripe Mango, Chili, Fenugreek, Coconut Cream.</div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SECTION 2: SEAFOOD & GRILLS (10+ Dishes) -->
+      <section class="category-section" data-category="seafood">
+        <h2 class="section-title">Seafood & Grills</h2>
+        <div class="card-grid">
+
+          <article class="card dish-card" data-category="seafood">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Poisson Grillé">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Seafood</span><span class="spice-rating">🌶️ Spicy</span></div>
+              <h3>Poisson Grillé</h3>
+              <p>Fresh red snapper marinated in garlic, ginger, and chili paste, grilled over coconut husks.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Red Snapper, Crushed Chili, Garlic, Ginger.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="seafood">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Salad Zourit">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Seafood</span><span class="spice-rating">🌶️ Mild</span></div>
+              <h3>Salad Zourit (Octopus Salad)</h3>
+              <p>Boiled octopus diced with fresh tomatoes, red onions, lemon juice, and olive oil.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Octopus, Red Onion, Fresh Lime, Parsley.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="seafood">
+            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80" alt="Bourgeois Grillé">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Seafood</span><span class="spice-rating">🌶️ Medium</span></div>
+              <h3>Bourgeois Grillé (Grilled Emperor)</h3>
+              <p>Whole red emperor fish stuffed with herbs, onions, and lemon slices, flame-grilled.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Red Emperor Fish, Lemongrass, Chives, Olive Oil.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="seafood">
+            <img src="https://images.unsplash.com/photo-1535400255456-984241443b29?auto=format&fit=crop&w=600&q=80" alt="Tek Tek Soup">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Seafood</span><span class="spice-rating">🌶️ Mild</span></div>
+              <h3>Bouyon Tek Tek (Clam Soup)</h3>
+              <p>Traditional small clam broth infused with garlic, local herbs, and fresh tomatoes.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Local Clams, Garlic, Parsley, Tomato Broth.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="seafood">
+            <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=600&q=80" alt="Job Grillé">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Seafood</span><span class="spice-rating">🌶️ Medium</span></div>
+              <h3>Job Gris Grillé</h3>
+              <p>Grilled Green Jobfish fillets glazed with garlic butter, dark rum, and lime juice.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Jobfish, Seychelles Rum, Garlic Butter, Lime.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="seafood">
+            <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&q=80" alt="Kari Sorb Dry">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Seafood</span><span class="spice-rating">🌶️ Spicy</span></div>
+              <h3>Crabe au Piment (Chili Crab)</h3>
+              <p>Whole reef crab wok-tossed with crushed fiery scotch bonnet peppers and garlic.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Reef Crab, Scotch Bonnet, Spring Onion, Ginger.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="seafood">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Thon Grillé">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Seafood</span><span class="spice-rating">🌶️ Mild</span></div>
+              <h3>Steak Thon Grillé (Seared Tuna)</h3>
+              <p>Yellowfin tuna steaks seared with black pepper, sea salt, and a dash of Creole salsa.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Yellowfin Tuna, Cracked Pepper, Tomato Salsa.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="seafood">
+            <img src="https://images.unsplash.com/photo-1579631542720-3a87824fff86?auto=format&fit=crop&w=600&q=80" alt="Homard Grillé">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Seafood</span><span class="spice-rating">🌶️ Mild</span></div>
+              <h3>Homard Grillé (Grilled Lobster)</h3>
+              <p>Sustainably caught spiny lobster split and grilled with herb and garlic butter sauce.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Spiny Lobster, Garlic, Butter, Fresh Dill.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="seafood">
+            <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?auto=format&fit=crop&w=600&q=80" alt="Poisson Frit">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Seafood</span><span class="spice-rating">🌶️ Medium</span></div>
+              <h3>Poisson Frit ak Satini</h3>
+              <p>Crispy pan-fried rabbitfish served alongside spicy green papaya chutney.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Rabbitfish, Papaya Chutney, Lime, Chili.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="seafood">
+            <img src="https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?auto=format&fit=crop&w=600&q=80" alt="Calmar Grillé">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Seafood</span><span class="spice-rating">🌶️ Medium</span></div>
+              <h3>Calmar Grillé (Grilled Squid)</h3>
+              <p>Tender squid tubes marinated in island herbs and flash-grilled over charcoal embers.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Local Squid, Garlic, Lemon Zest, Parsley.</div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SECTION 3: DESSERTS (10+ Dishes) -->
+      <section class="category-section" data-category="dessert">
+        <h2 class="section-title">Creole Desserts</h2>
+        <div class="card-grid">
+
+          <article class="card dish-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Ladob Banan">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Dessert</span><span class="spice-rating">🍯 Sweet</span></div>
+              <h3>Ladob Banan</h3>
+              <p>Plantain bananas simmered slowly in coconut milk, nutmeg, and authentic Seychelles vanilla.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Plantains, Coconut Milk, Nutmeg, Vanilla Pod.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Ladob Mayok">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Dessert</span><span class="spice-rating">🍯 Sweet</span></div>
+              <h3>Ladob Mayok (Cassava Ladob)</h3>
+              <p>Sweetened cassava roots stewed in thick coconut cream scented with cinnamon leaves.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Cassava Root, Coconut Cream, Cinnamon.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80" alt="Katkat Banan">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Dessert</span><span class="spice-rating">🍯 Sweet</span></div>
+              <h3>Katkat Banan</h3>
+              <p>Traditional boiled green bananas mashed with rich coconut milk and cane sugar syrup.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Bananas, Coconut Milk, Cane Sugar.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=600&q=80" alt="Gateau Koko">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Dessert</span><span class="spice-rating">🍯 Sweet</span></div>
+              <h3>Gâteau Koko (Coconut Candy)</h3>
+              <p>Chewy baked coconut cakes made with caramelized sugar, fresh coconut flakes, and nutmeg.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Grated Coconut, Brown Sugar, Nutmeg.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=600&q=80" alt="Mousse Koko">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Dessert</span><span class="spice-rating">🍯 Sweet</span></div>
+              <h3>Mousse au Coconuts</h3>
+              <p>Light and airy whipped coconut mousse infused with fresh lime zest and wild honey.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Coconut Cream, Wild Honey, Lime Zest.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=80" alt="Banane Flambée">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Dessert</span><span class="spice-rating">🍯 Sweet</span></div>
+              <h3>Banane Flambée au Rhum</h3>
+              <p>Ripe local bananas flambéed in dark Seychellois rum and served with vanilla ice cream.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Bananas, Takamaka Dark Rum, Butter, Vanilla.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Gateau Patat">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Dessert</span><span class="spice-rating">🍯 Sweet</span></div>
+              <h3>Gâteau Patate (Sweet Potato Cake)</h3>
+              <p>A moist island cake crafted from mashed orange sweet potatoes, coconut, and cinnamon.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Sweet Potato, Coconut, Cinnamon, Vanilla.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?auto=format&fit=crop&w=600&q=80" alt="Sorbet Mang">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Dessert</span><span class="spice-rating">🍯 Sweet</span></div>
+              <h3>Sorbet Mangue et Passion</h3>
+              <p>Refreshing house-made sorbet made from fresh local mangoes and tart passion fruit pulp.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Ripe Mango, Passionfruit, Mint.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80" alt="Flan Koko">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Dessert</span><span class="spice-rating">🍯 Sweet</span></div>
+              <h3>Flan au Coconuts</h3>
+              <p>Creamy custard caramel flan baked with freshly squeezed coconut milk.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Eggs, Coconut Milk, Caramel, Vanilla.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=600&q=80" alt="Beignet Banan">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Dessert</span><span class="spice-rating">🍯 Sweet</span></div>
+              <h3>Beignet Banan (Banana Fritters)</h3>
+              <p>Golden fried sweet banana fritters dusted with nutmeg powder and powdered sugar.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Sweet Bananas, Flour, Nutmeg, Sugar.</div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SECTION 4: APPETIZERS & SNACKS (10+ Dishes) -->
+      <section class="category-section" data-category="appetizer">
+        <h2 class="section-title">Appetizers & Starters</h2>
+        <div class="card-grid">
+
+          <article class="card dish-card" data-category="appetizer">
+            <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=600&q=80" alt="Samoussa">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Appetizer</span><span class="spice-rating">🌶️ Medium</span></div>
+              <h3>Samoussa Poisson</h3>
+              <p>Crispy fried pastry triangles filled with spiced fish mash and island herbs.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Fish Flakes, Cumin, Turmeric, Pastry.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="appetizer">
+            <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&q=80" alt="Satini Mang">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Appetizer</span><span class="spice-rating">🌶️ Spicy</span></div>
+              <h3>Satini Mang (Green Mango Salad)</h3>
+              <p>Grated green mangoes tossed with finely chopped onions, chilies, and lemon juice.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Green Mango, Chili, Onion, Lemon.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="appetizer">
+            <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80" alt="Satini Papaye">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Appetizer</span><span class="spice-rating">🌶️ Medium</span></div>
+              <h3>Satini Papaye (Papaya Salad)</h3>
+              <p>Crisp green papaya shredded and mixed with local sea salt, oil, and red pepper flakes.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Green Papaya, Chili, Lime Juice.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="appetizer">
+            <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80" alt="Boulet Poisson">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Appetizer</span><span class="spice-rating">🌶️ Mild</span></div>
+              <h3>Boulet Poisson (Fish Balls)</h3>
+              <p>Savory fried fish croquettes seasoned with garlic, scallions, and breadcrumbs.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Whitefish, Garlic, Chives, Breadcrumbs.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="appetizer">
+            <img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=600&q=80" alt="Chips Mayok">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Appetizer</span><span class="spice-rating">🧂 Savory</span></div>
+              <h3>Chips Mayok (Cassava Chips)</h3>
+              <p>Thinly sliced cassava root fried crispy and dusted with sea salt and chili powder.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Cassava, Sea Salt, Chili Powder.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="appetizer">
+            <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=600&q=80" alt="Chips Banan">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Appetizer</span><span class="spice-rating">🧂 Savory</span></div>
+              <h3>Chips Banan (Plantain Chips)</h3>
+              <p>Crispy fried green plantain rounds seasoned lightly with garlic salt.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Green Plantain, Garlic Salt, Vegetable Oil.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="appetizer">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Salad Palmis">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Appetizer</span><span class="spice-rating">🌶️ Mild</span></div>
+              <h3>Salad Palmis (Millionaire's Salad)</h3>
+              <p>Delicate heart of palm thinly shaved and tossed in a light lemon vinaigrette.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Heart of Palm, Vinaigrette, Lime Juice.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="appetizer">
+            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=80" alt="Roti Poulet">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Appetizer</span><span class="spice-rating">🌶️ Medium</span></div>
+              <h3>Mini Roti Roll</h3>
+              <p>Soft flatbread wrapped around minced spiced chicken and tomato chutney.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Flatbread, Spiced Chicken, Tomato.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="appetizer">
+            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" alt="Satini Rekin">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Appetizer</span><span class="spice-rating">🌶️ Spicy</span></div>
+              <h3>Satini Rekin (Shark Chutney)</h3>
+              <p>Boiled minced shark cooked with bilimbi fruit, lime, and hot chili oil.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Shark Meat, Bilimbi, Lime, Chili.</div>
+            </div>
+          </article>
+
+          <article class="card dish-card" data-category="appetizer">
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80" alt="Piment Krazed">
+            <div class="card-body">
+              <div class="badge-row"><span class="tag">Appetizer</span><span class="spice-rating">🔥 Hot</span></div>
+              <h3>Piment Krazé ak Crackers</h3>
+              <p>Fiery crushed scotch bonnet chili dip served with island crackers.</p>
+              <div class="ingredient-box"><strong>Key Ingredients:</strong> Scotch Bonnet, Garlic, Lemon, Oil.</div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- EXPANDED FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col">
+        <h3>Gou Kreol Hub</h3>
+        <p>Celebrating Seychellois Culture through authentic local flavors and traditions.</p>
+        <div class="social-icons">
+          <a href="https://wa.me/2480000000" target="_blank" class="social-btn whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com" target="_blank" class="social-btn instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" class="social-btn facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Cuisine Guide</a></li>
+          <li><a href="locations.html">Restaurants</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="contact-info">
+          <li><i class="fas fa-location-dot"></i> Victoria, Mahé, Seychelles</li>
+          <li><i class="fas fa-phone"></i> +248 123 4567</li>
+          <li><i class="fas fa-envelope"></i> info@goukreolhub.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gou Kreol Hub. Celebrating Seychellois Culture.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+</html>

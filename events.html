@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultural Events & Festivals | Gou Kreol Hub</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/events.css">
+  <!-- Font Awesome for Footer Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Gou Kreol</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Cuisine Guide</a></li>
+        <li><a href="locations.html" class="nav-link">Restaurants</a></li>
+        <li><a href="events.html" class="nav-link active">Events</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1 style="color: white;">Cultural Events & Festivals</h1>
+      <p>Experience vibrant Seychellois music, dance, and culinary celebrations.</p>
+    </div>
+  </section>
+
+  <!-- EVENTS MAIN CONTENT -->
+  <main class="container">
+    
+    <div class="controls-container">
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">All Events</button>
+        <button class="filter-btn" data-filter="festival">Festivals</button>
+        <button class="filter-btn" data-filter="culinary">Culinary</button>
+        <button class="filter-btn" data-filter="music">Music & Dance</button>
+      </div>
+
+      <input type="text" id="event-search" class="search-box" placeholder="Search events or locations...">
+    </div>
+
+    <!-- CATEGORY SECTIONS DIRECTORY -->
+    <div id="event-sections">
+
+      <!-- SECTION 1: FESTIVALS (6 Items) -->
+      <section class="category-section" data-category="festival">
+        <h2 class="section-title">Festivals</h2>
+        <div class="card-grid">
+
+          <article class="card event-card" data-category="festival">
+            <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=80" alt="Festival Kreol">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Festival</span>
+                <span class="event-date">October 2026</span>
+              </div>
+              <h3>Festival Kreol Victoria</h3>
+              <p>The largest celebration of Creole culture with street parades, art exhibits, and traditional wear.</p>
+              <div class="meta-box">
+                <span>📍 Victoria, Mahé</span>
+                <span>🎟️ Free Admission</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="festival">
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80" alt="Subios Underwater Festival">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Festival</span>
+                <span class="event-date">November 2026</span>
+              </div>
+              <h3>Subios Ocean Festival</h3>
+              <p>Celebrating Seychelles' marine biodiversity with film screenings, diving competitions, and beach galas.</p>
+              <div class="meta-box">
+                <span>📍 Beau Vallon Beach</span>
+                <span>🎟️ Free Entry</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="festival">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80" alt="Seychelles Carnival">
+            <div class="card-body">
+              <span class="badge-row">
+                <span class="tag">Festival</span>
+                <span class="event-date">April 2026</span>
+              </span>
+              <h3>International Carnival</h3>
+              <p>Vibrant floats and international cultural delegations performing through the capital streets.</p>
+              <div class="meta-box">
+                <span>📍 Victoria Town</span>
+                <span>🎟️ Open Access</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="festival">
+            <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=600&q=80" alt="La Digue Feast Day">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Festival</span>
+                <span class="event-date">August 15, 2026</span>
+              </div>
+              <h3>La Digue Assumption Feast</h3>
+              <p>Island-wide religious processions, boat races, and evening street parties across La Digue.</p>
+              <div class="meta-box">
+                <span>📍 La Passe, La Digue</span>
+                <span>🎟️ Free Event</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="festival">
+            <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=600&q=80" alt="Praslin Culinary Arts Festival">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Festival</span>
+                <span class="event-date">September 2026</span>
+              </div>
+              <h3>Praslin Culinary & Arts Festival</h3>
+              <p>Annual festival featuring local artists, traditional crafting workshops, and heritage exhibits.</p>
+              <div class="meta-box">
+                <span>📍 Grand Anse, Praslin</span>
+                <span>🎟️ Free Entry</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="festival">
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80" alt="Seychelles Francophonie Week">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Festival</span>
+                <span class="event-date">March 2026</span>
+              </div>
+              <h3>French Cultural Heritage Week</h3>
+              <p>A week-long celebration showcasing French-Creole literature, theatrical shows, and cinema.</p>
+              <div class="meta-box">
+                <span>📍 Alliance Française, Victoria</span>
+                <span>🎟️ Free / Ticketed</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SECTION 2: CULINARY (6 Items) -->
+      <section class="category-section" data-category="culinary">
+        <h2 class="section-title">Culinary</h2>
+        <div class="card-grid">
+
+          <article class="card event-card" data-category="culinary">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Bazar Labrin">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Culinary</span>
+                <span class="event-date">Wednesdays</span>
+              </div>
+              <h3>Bazar Labrin Night Market</h3>
+              <p>Sunset beachfront market with octopus skewers, coconut drinks, and fresh mango salads.</p>
+              <div class="meta-box">
+                <span>📍 Beau Vallon Beach</span>
+                <span>⏰ 4 PM – 9 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="culinary">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Creole Seafood BBQ">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Culinary</span>
+                <span class="event-date">Fridays</span>
+              </div>
+              <h3>Anse Royale Seafood Feast</h3>
+              <p>Open-air fish barbecue with red snapper, grilled lobster, and freshly chopped chili sambal.</p>
+              <div class="meta-box">
+                <span>📍 Anse Royale Beach</span>
+                <span>⏰ 6 PM – 10 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="culinary">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Bazar Victoria">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Culinary</span>
+                <span class="event-date">Saturdays</span>
+              </div>
+              <h3>Victoria Spice Market Morning</h3>
+              <p>Explore exotic vanilla beans, local nutmeg, coconut oils, and authentic home-cooked treats.</p>
+              <div class="meta-box">
+                <span>📍 Sir Selwyn Market</span>
+                <span>⏰ 6 AM – 2 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="culinary">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Takamaka Rum Tasting">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Culinary</span>
+                <span class="event-date">Mon – Fri</span>
+              </div>
+              <h3>Takamaka Distillery Tasting Session</h3>
+              <p>Guided tasting tour of local spiced rums paired with traditional banana chips and sweets.</p>
+              <div class="meta-box">
+                <span>📍 La Plaine St. André</span>
+                <span>⏰ 10 AM – 4 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="culinary">
+            <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=600&q=80" alt="Coconut & Cassava Workshop">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Culinary</span>
+                <span class="event-date">Thursdays</span>
+              </div>
+              <h3>Coconut & Cassava Cooking Masterclass</h3>
+              <p>Hands-on culinary session learning how to prepare Ladob dessert and coconut fish curry.</p>
+              <div class="meta-box">
+                <span>📍 Cote d'Or, Praslin</span>
+                <span>⏰ 2 PM – 5 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="culinary">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Street Food Sunday">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Culinary</span>
+                <span class="event-date">Sundays</span>
+              </div>
+              <h3>La Digue Sunday Street Bites</h3>
+              <p>Casual beachfront food trucks serving octopus salad, breadfruit chips, and coconut smoothies.</p>
+              <div class="meta-box">
+                <span>📍 Anse Réunion, La Digue</span>
+                <span>⏰ 11 AM – 6 PM</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SECTION 3: MUSIC & DANCE (6 Items) -->
+      <section class="category-section" data-category="music">
+        <h2 class="section-title">Music & Dance</h2>
+        <div class="card-grid">
+
+          <article class="card event-card" data-category="music">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="Moutya Night">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Music & Dance</span>
+                <span class="event-date">Saturdays</span>
+              </div>
+              <h3>Island Moutya Drums Night</h3>
+              <p>Experience authentic UNESCO-recognized Moutya drum rhythms around traditional beach bonfires.</p>
+              <div class="meta-box">
+                <span>📍 Anse Royale Beach</span>
+                <span>⏰ 7 PM Onwards</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="music">
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80" alt="Sega Dance Party">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Music & Dance</span>
+                <span class="event-date">Fridays</span>
+              </div>
+              <h3>Sega & Kanmtole Dance Workshop</h3>
+              <p>Learn the rhythmic dance moves of traditional Sega and European-influenced Kanmtole fiddle dances.</p>
+              <div class="meta-box">
+                <span>📍 National Cultural Centre</span>
+                <span>⏰ 5 PM – 7 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="music">
+            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" alt="Sunset Reggae Jam">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Music & Dance</span>
+                <span class="event-date">Sundays</span>
+              </div>
+              <h3>Sunset Acoustic Island Jam</h3>
+              <p>Relaxed live acoustic sessions featuring local Creole reggae artists and tropical acoustic guitars.</p>
+              <div class="meta-box">
+                <span>📍 Port Glaud Waterfront</span>
+                <span>⏰ 5 PM – 8 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="music">
+            <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=600&q=80" alt="Tropik Brass Band">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Music & Dance</span>
+                <span class="event-date">Bi-Weekly</span>
+              </div>
+              <h3>Tropik Brass Band Parade</h3>
+              <p>Upbeat Creole brass instruments playing festive marching rhythms along the boardwalk.</p>
+              <div class="meta-box">
+                <span>📍 Victoria Promenade</span>
+                <span>⏰ 4 PM – 6 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="music">
+            <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=600&q=80" alt="Praslin Drums Gathering">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Music & Dance</span>
+                <span class="event-date">Saturdays</span>
+              </div>
+              <h3>Praslin Percussion & Fire Show</h3>
+              <p>Live drum ensemble accompanied by traditional fire dancers along the Cote d'Or shoreline.</p>
+              <div class="meta-box">
+                <span>📍 Cote d'Or, Praslin</span>
+                <span>⏰ 8 PM – 10 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card event-card" data-category="music">
+            <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=600&q=80" alt="Youth Creole Music Fest">
+            <div class="card-body">
+              <div class="badge-row">
+                <span class="tag">Music & Dance</span>
+                <span class="event-date">Monthly</span>
+              </div>
+              <h3>Young Creole Talent Showcase</h3>
+              <p>Promising young Seychellois musicians performing modern Creole fusion and traditional songs.</p>
+              <div class="meta-box">
+                <span>📍 Roche Caiman Stadium</span>
+                <span>⏰ 3 PM – 7 PM</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- EXPANDED FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col">
+        <h3>Gou Kreol Hub</h3>
+        <p>Celebrating Seychellois Culture through authentic local flavors and traditions.</p>
+        <div class="social-icons">
+          <a href="https://wa.me/2480000000" target="_blank" class="social-btn whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com" target="_blank" class="social-btn instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" class="social-btn facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Cuisine Guide</a></li>
+          <li><a href="locations.html">Restaurants</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="contact-info">
+          <li><i class="fas fa-location-dot"></i> Victoria, Mahé, Seychelles</li>
+          <li><i class="fas fa-phone"></i> +248 123 4567</li>
+          <li><i class="fas fa-envelope"></i> info@goukreolhub.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gou Kreol Hub. Celebrating Seychellois Culture.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/events.js"></script>
+</body>
+</html>
